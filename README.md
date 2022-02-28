@@ -15,6 +15,9 @@ DNSNET Uses udp port 53 to make itself look like dns traffic, this means that fi
 # "But why encrypted?" Answer:
 If someone notices your actions, the sysadmin or whatever can't see what you were trying to do so your opsec will not be compromised
 
+<img src=https://user-images.githubusercontent.com/72181445/155986263-d911e874-5ce2-4d99-a5d3-0c44ae65f9bc.png width=500 heigth=500></img>
+
+
 # Update log:
 Alpha: 10 times encryption and stabile server end
 
