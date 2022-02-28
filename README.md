@@ -23,6 +23,10 @@ git clone https://github.com/R00tendo/dnsnet
 
 cd dnsnet
 
+apt install unrar
+
+unrar e cryptography.rar
+
 pip3 install termcolor
 
 python3 key_generator.py 5 > keys
