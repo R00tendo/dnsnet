@@ -18,7 +18,7 @@ If someone notices your actions, the sysadmin or whatever can't see what you wer
 # Update log:
 Alpha: 10 times encryption and stabile server end
 
-#In dev?: YES, This is the only project im working on currently
+# In dev?: YES, This is the only project im working on currently
 
 # How to use (REPLACE "Listener ip" with the c2 ip):
 git clone https://github.com/R00tendo/dnsnet
