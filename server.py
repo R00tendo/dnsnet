@@ -47,6 +47,9 @@ while True:
    print(termcolor.colored('[TRANSACTIONS] DATA SENT:' + payload2, "green"))
    payload = encode(payload2)   
  except:
+    reset = "SERVER RESET#--__--__2222"
+    reset = encode(reset)
+    s.sendto(reset, d[1])
     print("ERROR!")
     payload2 = ""
     d = b""
