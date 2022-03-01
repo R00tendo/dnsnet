@@ -1,7 +1,7 @@
 # dnsnet
 
 
-# Current Version: Alpha
+# Current Version: AlphaV2
 
 # Logo:
 ![box](https://user-images.githubusercontent.com/72181445/155982020-2db1333f-74b7-4c3f-8178-f14a75a0a65d.png)
@@ -20,6 +20,8 @@ If someone notices your actions, the sysadmin or whatever can't see what you wer
 
 # Update log:
 Alpha: 10 times encryption and stabile server end
+
+AlphaV2: Automatic reconnect if connection is lost and manual reset added by pressing ctrl + c on the server end, cryptography import problems solved
 
 # In dev?: YES, This is the only project im working on currently
 
