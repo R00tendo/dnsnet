@@ -21,7 +21,7 @@ keys2.reverse()
 while True:
  try:
 
-   d = s.recvfrom(99999999)
+   d = s.recvfrom(999999999)
    data = d[0]
 
    for key in keys2:
