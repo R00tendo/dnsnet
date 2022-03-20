@@ -32,7 +32,7 @@ AlphaV2: Automatic reconnect if connection is lost and manual reset added by pre
 
 BetaV1: Backdoor now remembers where you cd'ed to allowing much better file sytem exploring, overall small fixes to make the backdoor more stable and usable
 
-# In dev?: YES, This is the only project im working on currently
+# In dev?: no
 
 # How to use (REPLACE "Listener ip" with the c2 ip):
 git clone https://github.com/R00tendo/dnsnet
