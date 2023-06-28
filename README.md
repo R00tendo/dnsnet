@@ -3,7 +3,6 @@
 
 # Current Version: BetaV1
 
-# Logo:
 ![box](https://user-images.githubusercontent.com/72181445/155982020-2db1333f-74b7-4c3f-8178-f14a75a0a65d.png)
 
 # Description:
