@@ -23,7 +23,7 @@ Alpha: 10 times encryption and stabile server end
 
 AlphaV2: Automatic reconnect if connection is lost and manual reset added by pressing ctrl + c on the server end, cryptography import problems solved
 
-BetaV1: Backdoor now remembers where you cd'ed to allowing much better file sytem exploring, overall small fixes to make the backdoor more stable and usable
+BetaV1: Backdoor now remembers where you cd'ed to allowing much better file system exploring, overall small fixes to make the backdoor more stable and usable
 
 # In development?: yes
 
@@ -38,9 +38,7 @@ python3 key_generator.py 5 > keys
 python3 backdoor_generator.py <Listener ip>
 python3 server.py
 ```
-
-and send the backdoor directory and get your shell (if on windows I suggest using pyinstaller to compile it to exe first)
- 
+then send the backdoor python file to the target and execute it.
 # Technical Details:
 Encryption: Fernet 32bit encryption (that times the keys)
 Program: Python3
