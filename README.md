@@ -1,4 +1,4 @@
-# dnsnet
+# dnsnet (NEW VERSION COMING SOON, DO NOT DOWNLOAD THIS ONE)
 
 
 # Current Version: BetaV1
