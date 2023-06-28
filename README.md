@@ -7,23 +7,16 @@
 ![box](https://user-images.githubusercontent.com/72181445/155982020-2db1333f-74b7-4c3f-8178-f14a75a0a65d.png)
 
 # Description:
-DNSNET Is a backdoor that uses encrypted "dns" to communicate with the command & control server.
-
-
-DNSNET Uses udp port 53 to make itself look like dns traffic, this means that firewalls can't block this port (without losing dns rsolving) and i will be adding av evasion.
-
-# "But why encrypted?" Answer:
-If someone notices your actions, the sysadmin or whatever can't see what you were trying to do so your opsec will not be compromised
-
-<img src=https://user-images.githubusercontent.com/72181445/155986263-d911e874-5ce2-4d99-a5d3-0c44ae65f9bc.png width=500 heigth=500></img>
+DNSNET masks itself as DNS traffic by communicating through the port 53. On top of it making the traffic less easy to spot, 
+it will make dealing with the backdoor alot harder since a company of course cannot block the port and good luck figuring 
+out which one of the 999999999 programs that also use the 53 port is the right one. The traffic is also encrypted so that's nice I guess.
 
 # Disclaimer:
-Im not responsible for any damage or harm done by this program in the hands of other entities
+Im not responsible for any damage or harm done by this program in the hands of other people.
 
 # Where is this used?:
-I originally started coding this because i wanted a sure way to stealth backdoor victim machine during a red team assesments however
-
-you can use it however you want (Im not responsible for your own actions).
+I originally started coding this because I wanted a sure way to stealth backdoor victim machine during a red team/pen test assesments however
+you can use it however you want (I'm not responsible for your actions).
 
 # Update log:
 Alpha: 10 times encryption and stabile server end
@@ -32,7 +25,7 @@ AlphaV2: Automatic reconnect if connection is lost and manual reset added by pre
 
 BetaV1: Backdoor now remembers where you cd'ed to allowing much better file sytem exploring, overall small fixes to make the backdoor more stable and usable
 
-# In development?: no
+# In development?: yes
 
 # How to use (REPLACE "Listener ip" with the c2 ip):
 ```
@@ -46,7 +39,7 @@ python3 backdoor_generator.py <Listener ip>
 python3 server.py
 ```
 
-and send the backdoor directory and get your shell (if on windows i suggest using pyinstaller to compile it to exe first)
+and send the backdoor directory and get your shell (if on windows I suggest using pyinstaller to compile it to exe first)
  
 # Technical Details:
 Encryption: Fernet 32bit encryption (that times the keys)
