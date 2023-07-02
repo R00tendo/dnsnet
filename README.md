@@ -1,7 +1,7 @@
 # dnsnet
 
 
-# Current Version: ReleaseV1
+# Current Version: ReleaseV2
 
 ![box](https://user-images.githubusercontent.com/72181445/155982020-2db1333f-74b7-4c3f-8178-f14a75a0a65d.png)
 
@@ -25,6 +25,8 @@ AlphaV2: Automatic reconnect if connection is lost and manual reset added by pre
 BetaV1: Backdoor now remembers where you cd'ed to allowing much better file system exploring, overall small fixes to make the backdoor more stable and usable
 
 ReleaseV1: Complete redesign, coded from the ground up
+
+ReleaseV2: File transfers added (download only)
 
 # In development?: yes
 
